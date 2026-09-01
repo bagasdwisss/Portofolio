@@ -1,0 +1,108 @@
+const projects = [
+  {
+    file: 'bisindo-translator.py',
+    images: [
+      '/images/projects/bisindo-1.jpg',
+      '/images/projects/bisindo-2.jpg',
+      '/images/projects/bisindo-3.jpg',
+    ],
+    title: 'BISINDO Real-Time Translator',
+    role: 'Tugas Akhir — Machine Learning & Computer Vision Developer',
+    desc: 'Sistem penerjemah Bahasa Isyarat Indonesia (BISINDO) ke teks secara real-time menggunakan input webcam untuk mendukung komunikasi inklusif. Model deteksi dilatih dengan dataset alfabet dan kosakata BISINDO via Roboflow, dengan ekstraksi pose/keypoint untuk inferensi latensi rendah.',
+    tags: ['Python', 'TensorFlow', 'OpenCV', 'Roboflow', 'Pose Estimation'],
+    links: [],
+  },
+  {
+    file: 'cuaca-ku.tsx',
+    images: [
+      '/images/projects/cuaca-ku-1.jpg',
+      '/images/projects/cuaca-ku-2.jpg',
+      '/images/projects/cuaca-ku-3.jpg',
+    ],
+    title: 'CuacaKu — Smart Weather Forecast & Analytics',
+    role: 'Frontend Developer',
+    desc: 'Aplikasi prakiraan cuaca modern berbasis Progressive Web App (PWA) yang menggabungkan visualisasi data real-time, animasi dinamis, dan wawasan aktivitas harian. Mengintegrasikan multi-API untuk cuaca 7 hari, Indeks Kualitas Udara (AQI), dan geocoding presisi, lengkap dengan fitur Smart Insights untuk rekomendasi aktivitas dan peringatan otomatis.',
+    tags: ['React.js', 'Vite', 'Tailwind CSS', 'Recharts', 'react-tsparticles'],
+    links: [{ label: 'Lihat Demo', href: 'https://cuaca-ku-sevens.vercel.app/' }],
+  },
+  {
+    file: 'agentic-rag.ts',
+    images: [
+      '/images/projects/agentic-rag-1.jpg',
+      '/images/projects/agentic-rag-2.jpg',
+      '/images/projects/agentic-rag-3.jpg',
+    ],
+    title: 'Agentic RAG Implementation',
+    role: 'AI Application Developer',
+    desc: 'Merancang dan mengimplementasikan sistem Retrieval-Augmented Generation (RAG) berbasis agent untuk pencarian dan ekstraksi informasi kontekstual secara otomatis. Mengintegrasikan tools MCP dan Cloud SQL untuk mendukung alur kerja agent yang dinamis serta respons LLM yang presisi.',
+    tags: ['Agent Development Kit', 'MCP Toolbox', 'Cloud SQL'],
+    links: [],
+  },
+  {
+    file: 'bank-sumut-digitalization.php',
+    images: [
+      '/images/projects/bank-sumut-1.jpg',
+      '/images/projects/bank-sumut-2.jpg',
+      '/images/projects/bank-sumut-3.jpg',
+    ],
+    title: 'PT Bank Sumut Digitalization Systems',
+    role: 'IT Operations Intern — Jun–Jul 2025',
+    desc: 'Dashboard yang ini dirancang untuk memantau performa transaksi dan mengukur efisiensi beban kerja teller di seluruh kantor cabang perbankan. Sistem ini mengubah data transaksi mentah menjadi wawasan visual yang intuitif, mulai dari tren transaksi bulanan hingga pemetaan proporsi tunai dan non-tunai.',
+    tags: ['React', 'Laravel', 'MySQL', 'JavaScript'],
+    links: [],
+  },
+  {
+    file: 'bpjs-monitoring.js',
+    images: [
+      '/images/projects/bpjs-monitoring-1.jpg',
+      '/images/projects/bpjs-monitoring-2.jpg',
+      '/images/projects/bpjs-monitoring-3.jpg',
+    ],
+    title: 'BPJS Ketenagakerjaan Internal Monitoring System',
+    role: 'IT Intern — Sep–Des 2025',
+    desc: 'Mengembangkan modul sistem informasi internal di Divisi IT: sistem presensi internal dan visualisasi monitoring data operasional, serta berkontribusi pada optimalisasi alur pemrosesan data untuk evaluasi kinerja harian.',
+    tags: ['Web Framework', 'Database Management', 'React', 'Next.js', 'Laravel', 'MySQL', 'REST API'],
+    links: [],
+  },
+  {
+    file: 'chateau-lumiere.js',
+    images: [
+      '/images/projects/chateau-lumiere-1.jpg',
+      '/images/projects/chateau-lumiere-2.jpg',
+      '/images/projects/chateau-lumiere-3.jpg',
+    ],
+    title: 'Château Lumière - Fine Dining Reservation System',
+    role: 'Fullstack Web Developer — Projek Kuliah, 2025',
+    desc: 'Mengembangkan platform web reservasi restoran fine dining terintegrasi: fitur katalog menu eksklusif, pemesanan meja interaktif dengan peta layout, simulasi pembayaran, hingga manajemen riwayat reservasi pelanggan.',
+    tags: ['PHP', 'MySQL', 'Tailwind CSS', 'JavaScript', 'HTML5', 'CSS3', 'Three-Layer Architecture'],
+    links: [],
+  },
+  {
+    file: 'space-shooter.game',
+    images: [
+      '/images/projects/space-shooter-1.jpg',
+      '/images/projects/space-shooter-2.jpg',
+      '/images/projects/space-shooter-3.jpg',
+    ],
+    title: 'Space Shooter Interactive Game',
+    role: 'Game Developer — Proyek Praktikum, 2023',
+    desc: 'Permainan aksi pertarungan luar angkasa 2D interaktif berbasis logika pemrograman objek, dengan game loop, collision detection, dan manajemen state permainan (scoring/health).',
+    tags: ['Game Logic', 'OOP', 'UI Design'],
+    links: [],
+  },
+  {
+    file: 'mobile-app-project.kt',
+    images: [
+      '/images/projects/mobile-app-1.jpg',
+      '/images/projects/mobile-app-2.jpg',
+      '/images/projects/mobile-app-3.jpg',
+    ],
+    title: 'Mobile Programming Project',
+    role: 'Mobile Developer — Proyek Perkuliahan, 2024',
+    desc: 'Aplikasi mobile responsif dengan fokus pada desain antarmuka yang intuitif dan pengelolaan data lokal, menghubungkan komponen front-end dengan struktur penyimpanan data.',
+    tags: ['Mobile Framework', 'UI/UX', 'Local Storage'],
+    links: [],
+  },
+]
+
+export default projects
