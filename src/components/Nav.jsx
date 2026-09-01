@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const links = [
   { href: '#about', label: 'tentang.md' },
@@ -41,30 +42,42 @@ export default function Nav() {
           className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 sm:hidden"
         >
           <span
-            className={`h-[1.5px] w-5 bg-ink transition-transform ${open ? 'translate-y-[3.5px] rotate-45' : ''}`}
+            className={`h-[1.5px] w-5 bg-ink transition-transform duration-300 ${open ? 'translate-y-[3.5px] rotate-45' : ''
+              }`}
           />
           <span
-            className={`h-[1.5px] w-5 bg-ink transition-transform ${open ? '-translate-y-[3.5px] -rotate-45' : ''}`}
+            className={`h-[1.5px] w-5 bg-ink transition-transform duration-300 ${open ? '-translate-y-[3.5px] -rotate-45' : ''
+              }`}
           />
         </button>
       </div>
 
-      {/* Mobile Navigation */}
-      {open && (
-        <ul className="flex flex-col gap-1 border-t border-line px-5 pb-4 pt-2 sm:hidden">
-          {links.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className="block py-2.5 font-mono text-sm text-ink-soft transition-colors hover:text-accent"
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
+      {/* Mobile Navigation dengan Framer Motion */}
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className="overflow-hidden sm:hidden"
+          >
+            <ul className="flex flex-col gap-1 border-t border-line px-5 pb-4 pt-2">
+              {links.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    onClick={() => setOpen(false)}
+                    className="block py-2.5 font-mono text-sm text-ink-soft transition-colors hover:text-accent"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   )
 }
